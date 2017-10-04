@@ -1,0 +1,10 @@
+Taken shamelessly from [stackoverflow](https://stackoverflow.com/questions/38710121/how-to-store-sublime-text-preferences-in-github).
+
+# Pulling to new computer
+
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+git init
+git remote add origin https://github.com/PieterO/sublime-preferences.git
+rm Package\ Control.sublime-settings
+git fetch
+git checkout -t origin/master
